@@ -21,9 +21,7 @@ end
 
 
 package 'logentries'
-package 'logentries-daemon' do
-  action :nothing
-end
+package 'logentries-daemon'
 
 service 'logentries' do
   supports [:start, :stop, :restart, :reload]
